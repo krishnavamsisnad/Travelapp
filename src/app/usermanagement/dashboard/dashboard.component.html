@@ -1,0 +1,84 @@
+<nav class="navbar navbar-expand-lg bg-warning">
+  <div class="container-fluid">
+    <div class="container">
+      <a class="navbar-brand">
+        <img
+          class=".bg-warning"
+          src="https://seeklogo.com/images/F/flipkart-logo-5CE68C24AF-seeklogo.com.png"
+          alt=""
+          width="50"
+          height="25"
+        />
+      </a>
+    </div>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNavDropdown"
+      aria-controls="navbarNavDropdown"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="nav">
+      <input
+        class="form-control me-2"
+        [(ngModel)]="see"
+        type="search"
+        placeholder="Search"
+        aria-label="Search"
+      />
+    </div>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <!-- <li class="nav-item">
+          <a class="nav-link active .bg-primary" aria-current="page" href="#"
+            >Home</a
+          >
+        </li> -->
+
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            id="navbarDropdownMenuLink"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Login
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li>
+              <a class="dropdown-item text-dark" routerLink="login"
+                ><b class="bi bi-person-circle">UserLogin</b></a
+              >
+            </li>
+            <li>
+              <a
+                class="dropdown-item text-dark"
+                (click)="navigateToRegistrationForm()"
+                >New User</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item text-dark" (click)="navigateToOrders()"
+                >Your Orders</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item text-dark" (click)="navigateToLoginPage()"
+                >LogOut</a
+              >
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div class="nav">
+      <h4 class="bi bi-cart-fill" (click)="navigateToCart()"></h4>
+    </div>
+  </div>
+</nav>
