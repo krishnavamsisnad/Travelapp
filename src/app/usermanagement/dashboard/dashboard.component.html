@@ -1,17 +1,18 @@
-<nav class="navbar navbar-expand-lg bg-warning">
+<nav class="navbar navbar-expand-lg bg-secondary">
   <div class="container-fluid">
     <div class="container">
       <a class="navbar-brand">
         <img
           class=".bg-warning"
-          src="https://seeklogo.com/images/F/flipkart-logo-5CE68C24AF-seeklogo.com.png"
+          src="https://promos.makemytrip.com/Growth/Images/1x/mmt_dt_top_icon.png"
           alt=""
-          width="50"
-          height="25"
+          width="150"
+          height="50"
+          style="margin-left: 20px"
         />
       </a>
     </div>
-    <button
+    <!-- <button
       class="navbar-toggler"
       type="button"
       data-bs-toggle="collapse"
@@ -21,11 +22,11 @@
       aria-label="Toggle navigation"
     >
       <span class="navbar-toggler-icon"></span>
-    </button>
+    </button> -->
+    <!-- [(ngModel)]="see" -->
     <div class="nav">
       <input
         class="form-control me-2"
-        [(ngModel)]="see"
         type="search"
         placeholder="Search"
         aria-label="Search"
@@ -33,12 +34,6 @@
     </div>
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
       <ul class="navbar-nav">
-        <!-- <li class="nav-item">
-          <a class="nav-link active .bg-primary" aria-current="page" href="#"
-            >Home</a
-          >
-        </li> -->
-
         <li class="nav-item dropdown">
           <a
             class="nav-link dropdown-toggle"
@@ -47,6 +42,7 @@
             role="button"
             data-bs-toggle="dropdown"
             aria-expanded="false"
+            style="color: white"
           >
             Login
           </a>
@@ -57,28 +53,73 @@
               >
             </li>
             <li>
-              <a
-                class="dropdown-item text-dark"
-                (click)="navigateToRegistrationForm()"
+              <a class="dropdown-item text-dark" routerLink="register"
                 >New User</a
               >
             </li>
             <li>
-              <a class="dropdown-item text-dark" (click)="navigateToOrders()"
-                >Your Orders</a
-              >
-            </li>
-            <li>
-              <a class="dropdown-item text-dark" (click)="navigateToLoginPage()"
-                >LogOut</a
-              >
+              <a class="dropdown-item text-dark" routerLink="login">LogOut</a>
             </li>
           </ul>
         </li>
       </ul>
     </div>
-    <div class="nav">
-      <h4 class="bi bi-cart-fill" (click)="navigateToCart()"></h4>
-    </div>
   </div>
 </nav>
+
+<div style="margin-top: 10px">
+  <div class="d-flex align-items-center justify-content-around">
+    <div class="bus-div">
+      <img
+        src="https://png.pngtree.com/png-vector/20230209/ourmid/pngtree-cute-bus-clipart-png-image_6592473.png"
+        width="100"
+        height="50"
+        style="margin-right: 100px"
+        alt=""
+      />
+      <div class="vehicle-name">
+        <h5>Bus</h5>
+      </div>
+    </div>
+    <div>
+      <img
+        src="https://www.shutterstock.com/shutterstock/photos/1742252063/display_1500/stock-vector-indian-railway-train-engine-illustration-1742252063.jpg"
+        width="100"
+        height="50"
+      />
+      <div class="vehicle-name">
+        <h5>Train</h5>
+      </div>
+    </div>
+    <div>
+      <img
+        src="https://www.nicepng.com/png/detail/923-9230763_aeroplane-aeroplane-high-resolution.png"
+        width="100"
+        height="50"
+      />
+      <div class="vehicle-name">
+        <h5>Flight</h5>
+      </div>
+    </div>
+    <div>
+      <img
+        src="https://i.pinimg.com/736x/c3/6d/a2/c36da2ef20e3bdb837e23d073de232a2.jpg"
+        width="100"
+        height="50"
+      />
+      <div class="vehicle-name">
+        <h5>cab</h5>
+      </div>
+    </div>
+    <div>
+      <img
+        width="100"
+        height="40"
+        src="https://lenpenzo.com/blog/wp-content/uploads/2013/07/hotel-5-star-1.png"
+      />
+      <div class="vehicle-name">
+        <h5>Hotel</h5>
+      </div>
+    </div>
+  </div>
+</div>

@@ -12,7 +12,7 @@ import { UsermanagementModule } from './usermanagement/usermanagement.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    UsermanagementModule
+    UsermanagementModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
