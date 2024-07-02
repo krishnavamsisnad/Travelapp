@@ -8,6 +8,8 @@ import { BusserivesService } from 'src/app/busserives.service';
 })
 export class BusdataComponent {
   busesdata:any
+  searchFrom=""
+  searchTo=""
   constructor(public busdata:BusserivesService){}
 
   ngOnInit(){
