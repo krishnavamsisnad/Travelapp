@@ -1,0 +1,23 @@
+<a routerLink="busseats" style="text-decoration: none">
+  <div class="d-flex flex-wrap">
+    <div *ngFor="let f of hotels">
+      <div class="card m-3 p-3" style="width: 18rem; text-decoration: none">
+        <b>HotelName: {{ f.hotelname }}</b>
+        <span>HotelType:{{ f.hoteltype }}</span>
+        <span>HotelCapacity:{{ f.roomsavailable }}</span>
+        <!-- <span
+          >{{ f.From }}&nbsp;&nbsp;&nbsp;
+          <i class="bi bi-arrow-right"></i> &nbsp;&nbsp;&nbsp;{{ f.To }}</span
+        >
+        <span
+          >{{
+            f.starttime
+          }}am&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          {{ f.endtime }}pm</span
+        > -->
+        <span>Price:{{ f.price }}</span>
+        <span>Location:{{ f.location }}</span>
+      </div>
+    </div>
+  </div>
+</a>

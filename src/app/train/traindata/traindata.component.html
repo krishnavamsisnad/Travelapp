@@ -1,0 +1,23 @@
+<a routerLink="busseats" style="text-decoration: none">
+  <div class="d-flex flex-wrap">
+    <div *ngFor="let t of trains">
+      <div class="card m-3 p-3" style="width: 18rem; text-decoration: none">
+        <div class="d-flex justify-content-between">
+          <h5>{{ t.busname }}</h5>
+          <b>{{ t.bustype }}</b>
+        </div>
+        <span
+          >{{ t.From }}&nbsp;&nbsp;&nbsp;
+          <i class="bi bi-arrow-right"></i> &nbsp;&nbsp;&nbsp;{{ t.To }}</span
+        >
+        <span
+          >{{
+            t.starttime
+          }}am&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          {{ t.endtime }}pm</span
+        >
+        <span><b>Price:</b>{{ t.price }}</span>
+      </div>
+    </div>
+  </div>
+</a>
