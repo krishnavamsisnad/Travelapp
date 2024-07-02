@@ -1,1 +1,16 @@
 <p>busdata works!</p>
+<a routerLink="busseats" style="text-decoration: none;">
+    <div class="d-flex flex-wrap">
+      <div *ngFor="let b of busesdata">
+        <div class="card m-3 p-3" style="width: 18rem; text-decoration: none;">
+          <div class="d-flex justify-content-between">
+            <h5 >{{b.busname}}</h5>
+            <b >{{b.bustype}}</b>
+          </div>
+          <span>{{b.From}}&nbsp;&nbsp;&nbsp; <i class="bi bi-arrow-right"></i> &nbsp;&nbsp;&nbsp;{{b.To}}</span> 
+          <span>{{b.starttime}}am&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {{b.endtime}}pm</span>
+          <span><b>Price:</b>{{b.price}}</span>
+        </div>
+      </div>
+    </div>
+  </a>
