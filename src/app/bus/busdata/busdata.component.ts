@@ -10,6 +10,8 @@ import { bus } from 'src/app/busserives.service';
 export class BusdataComponent {
   busesdata:any
   buses:any[]=[];
+  searchFrom=""
+  searchTo=""
   constructor(public busdata:BusserivesService){}
 
   ngOnInit(){

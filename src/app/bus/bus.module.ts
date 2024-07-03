@@ -5,17 +5,21 @@ import { BusRoutingModule } from './bus-routing.module';
 import { BusdataComponent } from './busdata/busdata.component';
 import { HttpClientModule } from '@angular/common/http';
 import { BusseatesComponent } from './busseates/busseates.component';
+import { FormsModule } from '@angular/forms';
+import { SearchPipe } from './search.pipe';
 
 
 @NgModule({
   declarations: [
     BusdataComponent,
-    BusseatesComponent
+    BusseatesComponent,
+    SearchPipe
   ],
   imports: [
     CommonModule,
     BusRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ]
 })
 export class BusModule { }
