@@ -57,7 +57,6 @@ export class BusserivesService {
     return this.hotelinfo;
   }
   getseat(){
-    return this.http.get(`${this.seatapiurl}`)
+    return this.http.get(`${this.seatapiurl}`);
   }
- 
 }
